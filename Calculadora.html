@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+	<STYLE rel= "stylesheet" type="text/css">
+		table{
+		width: 500;
+		height: 300;
+		border-spacing: 0;
+		padding: 2;
+		text-align: center;
+		border-color: black;
+		background-color: #00BFFF;
+		border: 5px;
+		}
+		td{
+			text-align: center;
+		}
+		form{
+			width: 700px;
+			margin: 0px auto;
+		}
+		input.botao{
+			height: 50px;
+			width: 100px;
+		}
+		input.visor{
+			height: 50px; 
+			width: 420px;
+		}
+		
+	</STYLE>
+</HEAD>
+<BODY>
+<FORM NAME="Calc">
+	<TABLE>
+		<TR>
+			<TD>
+				<INPUT TYPE="text"  NAME="Input" SIZE="16" class="visor">
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<INPUT TYPE="button" NAME="um" VALUE="  1  " onClick="Calc.Input.value += '1' " class="botao">
+				<INPUT TYPE="button" NAME="dois" VALUE="  2  " onClick="Calc.Input.value += '2'" class="botao">
+				<INPUT TYPE="button" NAME="tres" VALUE="  3  " onClick="Calc.Input.value += '3'" class="botao"> 
+				<INPUT TYPE="button" NAME="mais" VALUE="  +  " onClick="Calc.Input.value += ' + '" class="botao">
+			<BR>
+				<INPUT TYPE="button" NAME="quatro" VALUE="  4  " onClick="Calc.Input.value += '4'" class="botao">
+				<INPUT TYPE="button" NAME="cinco" VALUE="  5  "  onClick="Calc.Input.value += '5'" class="botao">
+				<INPUT TYPE="button" NAME="seis" VALUE="  6  "   onClick="Calc.Input.value += '6'" class="botao">
+				<INPUT TYPE="button" NAME="menos" VALUE="  -  "  onClick="Calc.Input.value += ' - '" class="botao">
+			<BR>
+				<INPUT TYPE="button" NAME="sete" VALUE="  7  " onClick="Calc.Input.value += '7'" class="botao">
+				<INPUT TYPE="button" NAME="oito" VALUE="  8  " onClick="Calc.Input.value += '8'" class="botao">
+				<INPUT TYPE="button" NAME="nove" VALUE="  9  " onClick="Calc.Input.value += '9'" class="botao">
+				<INPUT TYPE="button" NAME="mult" VALUE="  x  " onClick="Calc.Input.value += ' * '" class="botao">
+			<BR>
+				<INPUT TYPE="button" NAME="zerar" VALUE="  C  " onClick="Calc.Input.value = ''" class="botao">
+				<INPUT TYPE="button" NAME="zero" VALUE="  0  " onClick="Calc.Input.value += '0'" class="botao">
+				<INPUT TYPE="button" NAME="Igual" VALUE="  =  " onClick="Calc.Input.value = eval(Calc.Input.value)" class="botao">
+				<INPUT TYPE="button" NAME="div" VALUE="  /  " onClick="Calc.Input.value += ' / '" class="botao">
+			</TD>
+		</TR>
+	</TABLE>
+</FORM>
+<BODY>
+</HTML>
